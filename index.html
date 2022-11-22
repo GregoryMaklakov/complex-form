@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="reset.css">
     <title>Complex-Form</title>
 </head>
 <body>
@@ -14,12 +13,11 @@
             <h1 class="option-first__title">Continue entering data</h1>
 
             <form action="#" method="POST" class="option-first__form form">
-
                 <span class="option-first__name">
                     <label class="form__label label">First Name
                         <input class="form__input input"
                             type="text"
-                            placeholder="Pavel"
+                            placeholder=" "
                             required
                             min-width="2"
                             max-width="20">
@@ -27,7 +25,7 @@
                     <label class="form__label label">Last Name
                         <input class="form__input input"
                             type="text"
-                            placeholder="Tselyuko"
+                            placeholder=" "
                             min-width="2"
                             max-width="20">
                     </label>
@@ -37,7 +35,7 @@
                     <label class="form__label label">Phone Number
                         <input class="form__input input"
                             type="tel"
-                            placeholder="+1 (484) 2918858"
+                            placeholder=" "
                             required
                             min-width="6"
                             max-width="20">
@@ -48,7 +46,7 @@
                     <label class="form__label label">Country
                         <input class="form__input input"
                             type="text"
-                            placeholder="USA"
+                            placeholder=" "
                             required
                             min-width="2"
                             max-width="30">
@@ -59,7 +57,7 @@
                     <label class="form__label label">City
                         <input class="form__input input"
                             type="text"
-                            placeholder="New York"
+                            placeholder=" "
                             required
                             min-width="2"
                             max-width="40">
@@ -67,7 +65,7 @@
                     <label class="form__label label">Street
                         <input class="form__input input"
                             type="text"
-                            placeholder="Wall St"
+                            placeholder=" "
                             min-width="2"
                             max-width="40">
                     </label>
@@ -77,41 +75,46 @@
                     <span class="gender__title">Legal Gender</span>
                         <span class="gender__wrp">
                             <span class="gender__radio radio">
-                                <input type="radio" id="male" name="gender" value="value-1" checked>
-                                <label for="male">Male</label>
+                                <input class="radio__input" type="radio" id="male" name="gender" value="value-1" checked>
+                                <label class="radio__item" for="male"><span class="radio__text">Male</span></label>
                             </span>
                             <span class="gender__radio radio">
-                                <input type="radio" id="famale" name="gender" value="value-2">
-                                <label for="famale">Female</label>
+                                <input class="radio__input" type="radio" id="famale" name="gender" value="value-2">
+                                <label class="radio__item" for="famale"><span class="radio__text">Female</span></label>
                             </span>
                             <span class="gender__radio radio">
-                                <input type="radio" id="other" name="gender" value="value-3">
-                                <label for="other">Other</label>
+                                <input class="radio__input" type="radio" id="other" name="gender" value="value-3">
+                                <label class="radio__item" for="other"><span class="radio__text">Other</span></label>
                             </span>
                         </span>
                 </span>
 
-                <span class="option-first__notify messege">
-                    <span class="messege__title">Notify me about...</span>
-                    <span class="messege__wrp">
-                        <span class="messege__radio radio">
-                            <input type="radio" id="messege" name="messege" value="value-4"checked>
-                            <label for="messege">All new messages</label>
+                <span class="option-first__notify message">
+                    <span class="message__title">Notify me about...</span>
+                    <span class="message__wrp">
+                        <span class="message__radio radio">
+                            <input class="radio__input" type="radio" id="message" name="message" value="value-4"checked>
+                            <label  class="radio__item" for="message"><span class="radio__text">All new messages</span></label>
                         </span>
-                        <span class="messege__radio radio">
-                            <input type="radio" id="direct" name="messege" value="value-5">
-                            <label for="direct">Female</label>
+                        <span class="message__radio radio">
+                            <input class="radio__input" type="radio" id="direct" name="message" value="value-5">
+                            <label class="radio__item" for="direct"><span class="radio__text">Female</span></label>
                         </span>
-                        <span class="messege__radio radio">
-                            <input type="radio" id="nothing" name="messege" value="value-6">
-                            <label for="nothing">Nothing</label>
+                        <span class="message__radio radio">
+                            <input class="radio__input" type="radio" id="nothing" name="message" value="value-6">
+                            <label class="radio__item" for="nothing"><span class="radio__text">Nothing</span></label>
                         </span>
                     </span>
                 </span>
 
                 <span class="option-first__checkbox checkbox">
                     <input id="c_1" class="checkbox__input" type="checkbox" value="1" name="checkbox">
-                    <label for="c_1" class="checkbox__label"><span class="checkbox__text">Notify me about replies to threads I’m following</span></label>
+                    <label for="c_1" class="checkbox__label">
+                            <svg class="checkbox__icon" width="8" height="6" viewBox="0 0 9 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.56818 4.99024L0.912046 3.3341C0.72591 3.14796 0.425228 3.14796 0.239092 3.3341C0.0529551 3.52024 0.0529551 3.82092 0.239092 4.00706L2.23409 6.00206C2.42023 6.18819 2.72091 6.18819 2.90705 6.00206L7.95659 0.95251C8.14273 0.766374 8.14273 0.465692 7.95659 0.279556C7.77046 0.0934195 7.46977 0.0934195 7.28364 0.279556L2.56818 4.99024Z" fill="white"/>
+                                </svg>
+                        <span class="checkbox__text">Notify me about replies to threads I’m following</span>
+                    </label>
                 </span>
             
                 <button type="submit" class="option-first__button button">Start Application</button>
