@@ -204,13 +204,13 @@ input:focus {
     position: absolute;
 }
 .radio__input:focus + .radio__item::before {
-    border: 1.16667px solid #000000;
+    border: 1px solid #000000;
 }
 .radio__input:checked + .radio__item::before {
-    border: 1.16667px solid #000000;
+    border: 1px solid #000000;
 }
 .radio__input:checked + .radio__item::after {
-    transform: scale(1)  translateY(-50%);
+    transform: scale(1)  translateY(-55%);
 }
 
 .radio__item {
@@ -229,13 +229,13 @@ input:focus {
     left: 6px;
     flex: 0 0 14px;
     border-radius: 50%;
-    border: 1.16667px solid #C4C4C4;
+    border: 1px solid #C4C4C4;
 }
 .radio__item::after {
     content: "";
-    transition: all 0.3s ease 0s;
+    transition: all 0.2s linear 0s;
     top: 50%;
-    transform: scale(0) translateY(-50%);
+    transform: scale(0) translateY(-55%);
     width: 7px;
     height: 7px;
     border-radius: 50%;
